@@ -33,6 +33,11 @@ class MainActivity : AppCompatActivity() {
             showBrushChooserDialog()
         }
 
+        val undo: ImageButton = findViewById(R.id.ib_undo)
+        undo.setOnClickListener {
+            drawingView?.onClickUndo()
+        }
+
     }
 
     private fun showBrushChooserDialog() {
